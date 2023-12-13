@@ -4,6 +4,9 @@ FROM python:3.10-slim
 # Set the working directory to /app
 WORKDIR /app
 
+#create DB mount point
+RUN mkdir /app/db
+
 # Copy the current directory contents into the container at /app
 COPY . /app
 
